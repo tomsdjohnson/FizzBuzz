@@ -1,16 +1,21 @@
 package com.company;
 public class Main {
     public static void main(String[] args) {
-        for(int i=1; i<=100; i++){
-            if( i%3 == 0 && i%5 == 0) {
-                System.out.println("FIZZBUZZ");
-            }else if ( i%5 == 0) {
-                System.out.println("BUZZ");
-            }else if (i%3 == 0) {
-                System.out.println("FIZZ");
-            }else {
-                System.out.println(i);
+
+        String output;
+
+        for(int i=1; i<=500; i++){
+            output = "";
+            if ( i%3 == 0) {
+                output = (output + "FIZZ");
+            }if (i%5 == 0) {
+                output = (output + "BUZZ");
+            }if (i%7 == 0) {
+                output = (output + "BANG");
+            }if (output == "") {
+                output = ("" + i);
             }
+            System.out.println(output);
         }
     }
 }
