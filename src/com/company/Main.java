@@ -5,16 +5,7 @@ public class Main {
         String output;
 
         for(int i=1; i<=500; i++){
-            output = "";
-            if ( i%3 == 0) {
-                output = (output + "FIZZ");
-            }if (i%5 == 0) {
-                output = (output + "BUZZ");
-            }if (i%7 == 0) {
-                output = (output + "BANG");
-            }if (output == "") {
-                output = ("" + i);
-            }
+            output = CheckNumber.check(i);
             System.out.println(output);
         }
     }
